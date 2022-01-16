@@ -4,7 +4,7 @@ const fetch = require('cross-fetch');
 
 app.get('/',(req,res)=>{
   if(req.query.url === undefined){
-    res.send({"err":"Bad Request","type":400});
+    res.send({"good":"false","type":400});
     return;
   }
   var urlRedir = req.query.url;
